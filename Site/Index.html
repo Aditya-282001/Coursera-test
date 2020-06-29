@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model in CSS</title>
+	<style type="text/css">
+		*{   /* it's a universal selector */
+			margin: 0px;
+			padding: 0px;
+		}
+		#box{
+			padding: 10px;
+			border: 3px solid black;
+			margin: 20px;
+			width:200px;
+			background-color: yellow;
+			font-size:20px;
+			box-sizing: border-box; /*it's maintain the whole box width not the contnt of the box, means if we set width:300px; the total of padding boder and margin is the total width.*/
+			height: 100px;
+			overflow: auto; /*to maintain overflow of the text it's use, auto=>it's shows a scroll bar, scroll=>it shows both side scroll bar, hidden=>using this we can hidden the overflow, default it's visible.*/
+		}
+		#content
+		{
+			background-color:green;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<h2>Box Model</h2>
+	<div id="box">
+		<div id="content">
+			Short notes is a phrase frequently used in India in educational institutes. It means a short description on any given subject. The subject could be any kind of topic such as a person, a thing, a happening, or an idea. ... The appropriate length of short note will definitely depend on the subject to be covered.
+		</div>
+	</div>
+
+</body>
+</html>
